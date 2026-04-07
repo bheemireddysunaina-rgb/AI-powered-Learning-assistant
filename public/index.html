@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnFlow — AI-Powered Learning Assistant</title>
+    <meta
+      name="description"
+      content="An intelligent learning companion that adapts to you—personalized paths, instant feedback, and mastery at your pace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="/">LearnFlow</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="chat.html" class="nav-cta">Chat with agent</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">AI-powered learning assistant</p>
+          <h1>
+            Learn smarter,
+            <em>not harder.</em>
+          </h1>
+          <p class="lead">
+            Your personal AI tutor understands how you learn—breaking down complex topics,
+            quizzing you at the right moment, and keeping you on track until concepts stick.
+          </p>
+          <div class="hero-actions">
+            <a href="chat.html" class="btn btn-primary">Try the agent</a>
+            <a href="#how" class="btn btn-ghost">See how it works</a>
+          </div>
+          <ul class="hero-stats" role="list">
+            <li><strong>Adaptive</strong> pacing per learner</li>
+            <li><strong>Instant</strong> explanations &amp; hints</li>
+            <li><strong>Evidence</strong>-aligned study plans</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-side-card">
+            <h2 class="hero-side-card-title">Open the learning agent</h2>
+            <a href="chat.html" class="btn btn-primary">Open chat</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="section-head">
+          <h2>Built for real learners</h2>
+          <p>
+            Not another static course—a responsive agent that observes progress and adjusts in
+            real time.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◈</div>
+            <h3>Personalized paths</h3>
+            <p>
+              Maps prerequisites, spots gaps, and sequences topics so each step feels achievable.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◇</div>
+            <h3>Adaptive practice</h3>
+            <p>
+              Questions scale with your confidence—harder when you’re ready, supportive when
+              you’re not.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◎</div>
+            <h3>Natural explanations</h3>
+            <p>
+              Ask in plain language; get clear analogies, worked examples, and links to deeper
+              reading.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section how">
+        <div class="section-head">
+          <h2>How the agent helps you</h2>
+          <p>Three loops that keep learning active instead of passive.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Set your goal</h3>
+              <p>
+                Pick a subject or paste your syllabus—the agent structures it into milestones you
+                can actually finish.
+              </p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Learn in conversation</h3>
+              <p>
+                Read, ask, and practice in one flow. Wrong answers become teaching moments, not
+                dead ends.
+              </p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Review on schedule</h3>
+              <p>
+                The agent brings back concepts before you forget them, so exam week feels
+                familiar—not frantic.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="logo logo-footer">LearnFlow</span>
+        <p class="footer-tag">AI-powered learning agent · hackathon project</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="chat.html">Chat</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

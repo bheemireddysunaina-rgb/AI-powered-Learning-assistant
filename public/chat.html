@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnFlow — Learning agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="chat-page">
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="/">LearnFlow</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#how">How it works</a>
+        <a href="chat.html" class="nav-cta">Chat</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="chat-layout">
+      <div class="chat-page-head">
+        <h1 class="chat-page-title">Learning agent</h1>
+        <p class="chat-page-sub">
+          Powered by <strong>Gemini 2.5 Flash</strong> on the server. Ask anything you’re studying.
+        </p>
+        <p id="api-status" class="chat-api-status" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="chat-panel">
+        <div id="chat-log" class="chat-log" aria-live="polite" aria-relevant="additions">
+          <div class="chat-welcome">
+            <p><strong>Hi—I’m your LearnFlow tutor.</strong> Tell me what you’re learning (topic + level), or paste a question you’re stuck on.</p>
+          </div>
+        </div>
+        <p id="chat-busy" class="chat-busy sr-only"></p>
+        <form id="chat-form" class="chat-input-row" autocomplete="off">
+          <label class="sr-only" for="chat-input">Your message</label>
+          <textarea
+            id="chat-input"
+            name="message"
+            rows="2"
+            placeholder="e.g. Explain gradient descent like I’m new to calculus…"
+            maxlength="8000"
+          ></textarea>
+          <button type="submit" class="btn btn-primary btn-send" id="chat-send">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
